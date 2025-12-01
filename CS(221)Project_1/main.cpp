@@ -105,7 +105,7 @@ void addNewSoul(){
     std::string location;
     
     // Line of questioning to collect data about the soul
-    std::cout << "Enter Soul's name: " << std::endl;
+    std::cout << "Enter Soul's name (First Last): " << std::endl;
     std::cin >> name1 >> name2;
     std::cout << "Enter Soul's Death Date (XX/XX/XXXX): ";
     std::cin >> date;
