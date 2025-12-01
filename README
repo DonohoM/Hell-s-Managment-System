@@ -14,7 +14,7 @@ Represents an individual soul with attributes such as:
 
 * Name
 * Death date
-* Soul ID
+* Soul ID (Soul ID is gender(1 = male, 0 = female)/alphanumeric number of the first letters of their first and last name/date of death)
 * Age
 * Location
 * Availability (living vs. deceased)
