@@ -1,0 +1,163 @@
+# 📘 **Hell’s Management System**
+
+Hell’s Management System is a console-based simulation where the **Grim Reaper** manages souls across different afterlife locations. The program allows users to add new souls, resurrect or reap souls, search for specific souls, and manage multiple afterlife realms dynamically.
+
+This project demonstrates fundamental and intermediate OOP concepts including classes, dynamic memory management, vectors, searching, and modular program structure.
+
+# 🧱 **Project Overview**
+
+The system consists of three main components:
+
+### **🕊️ Soul Class**
+
+Represents an individual soul with attributes such as:
+
+* Name
+* Death date
+* Soul ID
+* Age
+* Location
+* Availability (living vs. deceased)
+
+
+Souls can:
+
+* Be displayed
+* Be "reaped" (made available in the afterlife)
+* Be "resurrected" (returned to the living world)
+
+
+---
+
+### **🌌 Afterlife Class**
+
+Each afterlife location stores a collection of souls using a dynamic `std::vector<Soul*>`.
+
+It supports:
+
+* Adding souls
+* Removing souls
+* Displaying souls
+* Searching for a specific soul
+
+
+---
+
+### **🌍 AfterlifeList Class**
+
+A manager that tracks **multiple afterlife realms**.
+It allows:
+
+* Creating new locations
+* Destroying locations
+* Searching across all realms
+* Displaying inventories for all locations
+
+
+---
+
+### **🖥️ Main UI Loop**
+
+An interactive terminal menu lets the user:
+
+1. Add a new soul
+2. Find a soul
+3. Return a soul to/from the living
+4. View or edit afterlife inventories
+
+
+---
+
+# 📂 **Project Structure**
+
+```
+Hell-s-Managment-System/
+└── CS(221)Project_1/
+    ├── main.cpp
+    ├── Soul.cpp
+    ├── Soul.h
+    ├── Afterlife.cpp
+    ├── Afterlife.h
+    ├── Makefile
+    └── README.md
+```
+
+---
+
+# 🛠️ **How to Build & Run**
+
+This project includes a **Makefile**, allowing users to build and run with just a few commands.
+
+## ✅ 1. Clone the Repository
+
+```bash
+git clone https://github.com/DonohoM/Hell-s-Managment-System.git
+```
+
+## ✅ 2. Navigate Into the Source Directory
+
+```bash
+cd Hell-s-Managment-System/CS\(221\)Project_1
+```
+
+## ✅ 3. Build the Program
+
+```bash
+make
+```
+
+This produces an executable called:
+
+```
+hell_management
+```
+
+## ▶️ 4. Run the Program
+
+```bash
+./hell_management
+```
+
+## 🧹 5. Clean Build Files
+
+```bash
+make clean
+```
+
+---
+
+# 📜 **Example Interaction**
+
+```
+Would you like to:
+    1. Add A New Soul
+    2. Find A Soul
+    3. Return A Soul To The Land Of The Living
+    4. Inventory At Location
+Response: 1
+
+Enter Soul's name:
+Enter Soul's Death Date:
+Enter Soul's Soul ID:
+Enter Soul's Age:
+Enter Soul's Location:
+```
+
+---
+
+# 🎓 **Academic Purpose**
+
+This project was created for **CS 221 (Object-Oriented Programming)** and showcases:
+
+* Class design and encapsulation
+* Dynamic memory handling
+* Searching and vector manipulation
+* Modular C++ program structure
+* Interactive terminal UI flow
+
+---
+
+# 👤 **Author**
+
+**Matthew Donoho**
+Software Developer • Student • Lifelong Learner
