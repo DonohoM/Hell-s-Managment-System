@@ -18,6 +18,7 @@
 #include <iostream>
 #include <vector>
 #include "Afterlife.h"
+#include <cctype>
 
 // Initializes some locations in the after life, but you can add more
 
@@ -80,9 +81,9 @@ int main(){
                 break;
             default: // They input something else
                 std::cout << "Invalid input." << std::endl;
-                break;
+                std::cin.clear();
+                std::cin.ignore(1000, '\n');
         }
-        
         // Checks if they have any more requests for the managment system
         char repeat = ' ';
         std::cout << "Would you like to submit another request(y/n): ";

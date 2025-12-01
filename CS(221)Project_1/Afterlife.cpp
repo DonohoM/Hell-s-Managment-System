@@ -6,6 +6,7 @@
 //
 
 #include <_stdio.h>
+#include <algorithm>
 #include "Afterlife.h"
 #include <iostream>
 
