@@ -106,15 +106,16 @@ void addNewSoul(){
     std::string location;
     
     // Line of questioning to collect data about the soul
-    std::cout << "Enter Soul's name (First Last): " << std::endl;
+    std::cout << "Enter Soul's name (First Last): ";
     std::cin >> name1 >> name2;
     std::cout << "Enter Soul's Death Date (XX/XX/XXXX): ";
     std::cin >> date;
-    std::cout << "Enter Soul's Soul ID: ";
+    // Soul ID is gender(1 = male, 0 = female)/alphanumeric number of the first letters of their first and last name/date of death
+    std::cout << "Enter Soul's Soul ID (9 digit number): ";
     std::cin >> sId;
-    std::cout << "Enter Soul's Age: ";
+    std::cout << "Enter Soul's Age (years): ";
     std::cin >> age;
-    std::cout << "Enter Soul's Location: ";
+    std::cout << "Enter Soul's Location (Tartarus, Asphodel, etc.): ";
     std::cin >> location;
     
     // Getline was acting funky so i went old school and just manually added the names together
